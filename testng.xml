@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+<listeners>
+<listener class-name ="CustomListeners.Listerners"></listener>
+<listener class-name ="org.uncommons.reportng.HTMLReporter"></listener>
+</listeners>
+  <test name="Registration_Login">
+    <classes>
+      <class name="TestNG.FinalCode_TestNG.testAnotations"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ConsumerJourney">
+    <classes>
+      <class name="TestNG.FinalCode_TestNG.creatingTestSuit"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Logout">
+    <classes>
+      <class name="TestNG.FinalCode_TestNG.TestGroup"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

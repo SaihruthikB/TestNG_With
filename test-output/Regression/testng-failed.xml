@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <listeners>
+    <listener class-name="CustomListeners.Listerners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Registration_Login(failed)">
+    <classes>
+      <class name="TestNG.FinalCode_TestNG.testAnotations">
+        <methods>
+          <include name="Registration"/>
+        </methods>
+      </class> <!-- TestNG.FinalCode_TestNG.testAnotations -->
+    </classes>
+  </test> <!-- Registration_Login(failed) -->
+</suite> <!-- Failed suite [Regression] -->
